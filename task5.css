@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .game-container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .choices {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .choice {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .choice img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .choice:hover {
+    transform: scale(1.1);
+  }
+  
+  .result {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  #message {
+    margin-bottom: 20px;
+  }
+  
+  #result-image {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+  
+  / Responsive Layout /
+  @media (max-width: 768px) {
+    .choices {
+      flex-direction: column;
+    }
+  
+    .choice {
+      margin-bottom: 10px;
+    }
+  
+    .choice img {
+      width: 80px;
+      height: 80px;
+    }
+  }
